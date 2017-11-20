@@ -8,9 +8,6 @@ from selenium.webdriver import ActionChains
 import time,sys
 import random
 
-adj = ['Excellent','Good','Cool','Nice','Great']
-word = ['picture','shot','click',' ']
-
 chromedriver = 'C:\chromedriver.exe'
 browser = webdriver.Chrome(chromedriver)
 
@@ -50,16 +47,7 @@ for i in range(150):
     except:
         print("Already you liked this picture. Moving to next picture")
         continue
-    '''
-    comment_box = browser.find_elements_by_xpath("//textarea")
-    comment_box[0].click()
-    time.sleep(1)
-    #comment_box[0].send_keys("Nice")
-    comment_box[0].send_keys(random.choice(adj)+' '+random.choice(word))
-    time.sleep(1)
-    comment_box[0].send_keys(Keys.ENTER)
-    time.sleep(1)
-    '''
+
     
  
 
