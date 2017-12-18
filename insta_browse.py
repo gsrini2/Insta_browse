@@ -26,8 +26,8 @@ username = browser.find_element_by_name("username")
 password = browser.find_element_by_name("password")
 
 #Replace username and password with your Instagram user id and password
-username.send_keys("username")
-password.send_keys("password")
+username.send_keys("your_username")
+password.send_keys("your_password")
 
 browser.find_element_by_tag_name("button").click()
 time.sleep(3)
